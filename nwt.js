@@ -7,11 +7,13 @@ $.ajax({
     url: url,
     method: 'GET',
 }).done(function(result) {
+	var result = result.response.docs[0].headline.main
     console.log(result);
 }).fail(function(err) {
     throw err;
 });
 
 for (var i = 0; i>10;i++) {
-	var subject=
+	
 }
+
